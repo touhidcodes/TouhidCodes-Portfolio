@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Header from "./components/UI/Headers/Header";
 
 export default function Home() {
   return (
@@ -103,11 +104,16 @@ export default function Home() {
               -&gt;
             </span>
           </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
+          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50 font-montserrat">
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
       </div>
+      <button className="inline-block cursor-pointer rounded-md bg-gray-800 px-4 py-3 text-center text-sm font-semibold uppercase text-white transition duration-200 ease-in-out hover:bg-gray-900">
+        Button
+      </button>
+      <h4 className=" text-4xl ">TouhidCodesx</h4>
+      <Header />
     </main>
   );
 }
