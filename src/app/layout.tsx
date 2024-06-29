@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
+import Providers from "@/lib/providers/Providers";
+import Header from "./components/UI/Headers/Header";
 
 const chillax = localFont({
   src: "../../public/fonts/Chillax.woff2",
@@ -18,8 +20,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={chillax.className}>{children}</body>
-    </html>
+    <Providers>
+      <html lang="en">
+        <body className={chillax.className}>
+          <Header />
+          {children}
+        </body>
+      </html>
+    </Providers>
   );
 }
