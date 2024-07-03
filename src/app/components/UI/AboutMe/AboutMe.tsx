@@ -17,7 +17,7 @@ const AboutMe = () => {
           className="rounded-full border-4 border-gray-700 mt-14"
         />
         <h1 className="text-center text-5xl chillax mt-10 mb-3">
-          Hello I`&apos;`m Touhidur Zaman
+          Hello I&apos;m Touhidur Zaman
         </h1>
         <a href="https://git.io/typing-svg">
           <img
