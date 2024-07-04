@@ -21,7 +21,7 @@ const Blogs = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 px-5 lg:px-10 mt-20">
         {blogs?.data?.data.map((blog: TBlog) => (
           <div
-            className="card card-compact bg-base-100 w-96 shadow-xl"
+            className="card card-compact bg-base-100 py-10 w-full lg:w-96 shadow-xl"
             key={blog?.id}
           >
             <figure>
