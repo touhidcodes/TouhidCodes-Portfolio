@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState, ChangeEvent } from "react";
 
 const Header = () => {
@@ -7,13 +8,15 @@ const Header = () => {
   const navOptions = (
     <>
       <li>
-        <a>Item 1</a>
+        <Link href="/">Home</Link>
       </li>
       <li>
-        <a>Parent</a>
+        <Link href="/blogs">Blogs</Link>
       </li>
       <li>
-        <a>Item 3</a>
+        <Link href="https://touhidcodes-portfolio-dashboard.vercel.app">
+          Dashboard
+        </Link>
       </li>
     </>
   );
@@ -47,11 +50,13 @@ const Header = () => {
           <div className=" hidden lg:flex">
             <ul className="menu menu-horizontal px-1 text-xl">
               {navOptions}
-              <button className="btn btn-ghost font-regular">
-                <p className=" badge  text-white bg-opacity-10 rounded-md p-5 text-lg chillax font-extralight">
-                  LETS TALK
-                </p>
-              </button>
+              <Link href="#contact">
+                <button className="btn btn-ghost font-regular">
+                  <p className=" badge  text-white bg-opacity-10 rounded-md p-5 text-lg chillax font-extralight">
+                    LET&apos;S TALK
+                  </p>
+                </button>
+              </Link>
             </ul>
           </div>
           {/* Dropdown Menu */}

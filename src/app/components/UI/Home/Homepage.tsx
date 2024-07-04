@@ -1,4 +1,5 @@
 import AboutMe from "../AboutMe/AboutMe";
+import Blogs from "../Blogs/Blogs";
 import ContactMe from "../ContactMe/ContactMe";
 import EducationAndExperience from "../EducationAndExperience/EducationAndExperience";
 import Footer from "../Footers/Footer";
@@ -14,6 +15,7 @@ const Homepage = () => {
       <Projects />
       <Skills />
       <EducationAndExperience />
+      <Blogs />
       <ContactMe />
       <Footer />
     </>

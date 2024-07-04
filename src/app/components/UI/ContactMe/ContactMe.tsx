@@ -44,7 +44,7 @@ const ContactMe = () => {
     //   );
   };
   return (
-    <div className="bg-[#1d1e1f] py-10 lg:py-20">
+    <div className="bg-[#1d1e1f] py-10 lg:py-20" id="contact">
       <div className="mx-auto max-w-screen-xl text-white  px-10">
         <h1 className=" text-5xl font-bold text-center text-white mb-5">
           Contact Me

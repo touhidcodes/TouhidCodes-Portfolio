@@ -1,6 +1,8 @@
 import "./Hero.css";
 import image from "../../../../../public/assets/me/touhid.jpg";
 import Image from "next/image";
+import Link from "next/link";
+import ResumeDownload from "../../ResumeDownload/ResumeDownload";
 
 const Hero = () => {
   return (
@@ -22,6 +24,27 @@ const Hero = () => {
               Full Stack Web Development & Web Design, <br /> Both front-end &
               back-end services to build your imagination.
             </p>
+            <div className="flex items-center mt-10 text-xl">
+              <Link href="#projects">
+                <button className="btn btn-ghost font-regular">
+                  <p className=" badge  text-white bg-opacity-10 rounded-md p-5 text-lg chillax font-extralight">
+                    PROJECTS
+                  </p>
+                </button>
+              </Link>
+              <Link href="#skills">
+                <button className="btn btn-ghost font-regular">
+                  <p className=" badge text-white bg-opacity-10 rounded-md p-5 text-lg chillax font-extralight">
+                    SKILLS
+                  </p>
+                </button>
+              </Link>
+              <button className="btn btn-ghost font-regular">
+                <div className=" badge  text-white bg-opacity-10 rounded-md p-5 ">
+                  <ResumeDownload />
+                </div>
+              </button>
+            </div>
           </div>
           <div className="mx-auto col-span-2">
             <div className="box w-full">

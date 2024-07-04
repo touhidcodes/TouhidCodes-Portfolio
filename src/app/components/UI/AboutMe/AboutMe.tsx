@@ -1,8 +1,6 @@
-import React from "react";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
-
-const resumeUrl = "/assets/resume/Resume_of_Touhidur_Zaman.pdf";
+import ResumeDownload from "../../ResumeDownload/ResumeDownload";
 
 const AboutMe = () => {
   return (
@@ -34,23 +32,15 @@ const AboutMe = () => {
             engage in team leadership and approach every challenge positively.
           </p>
         </div>
-        <div className="mt-10 flex flex-col lg:block">
+        <div className="mt-10 flex flex-row ">
           <button className="btn btn-ghost font-regular">
-            <a
-              href={resumeUrl}
-              download="Resume_of_Touhidur_Zaman.pdf"
-              className="badge bg-black bg-opacity-90 rounded-md p-5 text-lg text-white flex items-center chillax font-extralight"
-            >
-              RESUME
-              <Icon
-                icon="iconoir:download"
-                className="text-white h-7 w-7 ml-1"
-              />
-            </a>
+            <div className="badge bg-black bg-opacity-90 rounded-md p-5">
+              <ResumeDownload />
+            </div>
           </button>
           <button className="btn btn-ghost font-regular">
             <p className="badge bg-black bg-opacity-90 rounded-md p-5 text-lg chillax font-extralight text-white ">
-              LET`&apos;`S TALK
+              LET&apos;S TALK
             </p>
           </button>
         </div>

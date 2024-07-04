@@ -16,7 +16,10 @@ const Projects = () => {
   }
 
   return (
-    <div className="container mx-auto max-w-screen-xl py-10 lg:py-20">
+    <div
+      className="container mx-auto max-w-screen-xl py-10 lg:py-20"
+      id="projects"
+    >
       <h2 className="text-5xl font-bold text-center">My Projects</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-5 lg:px-28 mt-20">
         {projects?.data?.data.map((project: TProject) => (
