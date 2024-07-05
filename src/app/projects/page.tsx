@@ -1,12 +1,11 @@
 "use client";
 
 import { TProject } from "@/types/Project";
-import { useGetFeaturedProjectsQuery } from "@/redux/api/projectApi";
-import ProjectCard from "../../Card/ProjectCard/ProjectCard";
-import Link from "next/link";
+import { useGetAllProjectsQuery } from "@/redux/api/projectApi";
+import ProjectCard from "../components/Card/ProjectCard/ProjectCard";
 
-const Projects = () => {
-  const { data: projects, isLoading } = useGetFeaturedProjectsQuery({});
+const ProjectsPage = () => {
+  const { data: projects, isLoading } = useGetAllProjectsQuery({});
 
   if (isLoading) {
     return (
@@ -27,17 +26,8 @@ const Projects = () => {
           <ProjectCard project={project} key={project?.id} />
         ))}
       </div>
-      <div className="mt-14 flex items-center justify-center">
-        <Link href="/projects">
-          <button className="btn btn-ghost font-regular">
-            <p className="badge bg-black bg-opacity-90 rounded-md p-5 text-lg chillax font-extralight text-white ">
-              Explore More
-            </p>
-          </button>
-        </Link>
-      </div>
     </div>
   );
 };
 
-export default Projects;
+export default ProjectsPage;

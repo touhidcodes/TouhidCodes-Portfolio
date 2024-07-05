@@ -42,6 +42,15 @@ const Blogs = () => {
           </div>
         ))}
       </div>
+      <div className="mt-14 flex items-center justify-center">
+        <Link href="/blogs">
+          <button className="btn btn-ghost font-regular">
+            <p className="badge bg-black bg-opacity-90 rounded-md p-5 text-lg chillax font-extralight text-white ">
+              More Blogs
+            </p>
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };

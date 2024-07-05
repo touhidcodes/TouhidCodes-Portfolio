@@ -1,7 +1,8 @@
 import { Icon } from "@iconify/react";
+import Link from "next/link";
 
 type TLinksCardProps = {
-  id: string;
+  id?: string;
   liveSite: string | null | undefined;
   clientSide: string | null | undefined;
   serverSide: string | null | undefined;
@@ -57,17 +58,21 @@ const LinksCard = ({
           </a>
         </div>
       )}
-      <div className="flex items-center">
-        <div className="rounded-full h-7 w-7 bg-black opacity-50 flex justify-center items-center">
-          <Icon
-            icon="solar:arrow-right-up-linear"
-            className="text-white h-5 w-5"
-          />
+      {id && (
+        <div className="flex items-center">
+          <div className="rounded-full h-7 w-7 bg-black opacity-50 flex justify-center items-center">
+            <Icon
+              icon="solar:arrow-right-up-linear"
+              className="text-white h-5 w-5"
+            />
+          </div>
+          <Link href={`/projects/${id}`}>
+            <button className=" link lg:text-xl ml-2 hover:underline no-underline">
+              Explore
+            </button>
+          </Link>
         </div>
-        <button className=" link lg:text-xl ml-2 hover:underline no-underline">
-          Explore
-        </button>
-      </div>
+      )}
     </div>
   );
 };

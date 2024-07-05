@@ -1,6 +1,7 @@
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import ResumeDownload from "../../ResumeDownload/ResumeDownload";
+import Link from "next/link";
 
 const AboutMe = () => {
   return (
@@ -34,15 +35,17 @@ const AboutMe = () => {
         </div>
         <div className="mt-10 flex flex-row ">
           <button className="btn btn-ghost font-regular">
-            <div className="badge bg-black bg-opacity-90 rounded-md p-5">
+            <div className="badge bg-black bg-opacity-90 rounded-md p-5 text-white">
               <ResumeDownload />
             </div>
           </button>
-          <button className="btn btn-ghost font-regular">
-            <p className="badge bg-black bg-opacity-90 rounded-md p-5 text-lg chillax font-extralight text-white ">
-              LET&apos;S TALK
-            </p>
-          </button>
+          <Link href="/#contact">
+            <button className="btn btn-ghost font-regular">
+              <p className="badge bg-black bg-opacity-90 rounded-md p-5 text-lg chillax font-extralight text-white ">
+                LET&apos;S TALK
+              </p>
+            </button>
+          </Link>
         </div>
       </div>
     </div>
