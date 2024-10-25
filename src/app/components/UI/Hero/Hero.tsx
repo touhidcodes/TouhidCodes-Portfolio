@@ -2,7 +2,6 @@ import "./Hero.css";
 import image from "../../../../../public/assets/me/touhid.jpg";
 import Image from "next/image";
 import Link from "next/link";
-import ResumeDownload from "../../ResumeDownload/ResumeDownload";
 
 const Hero = () => {
   return (
@@ -40,11 +39,16 @@ const Hero = () => {
                     </p>
                   </button>
                 </Link>
-                <button className="btn btn-ghost font-regular">
-                  <div className=" badge  text-white bg-opacity-10 rounded-md p-5 ">
-                    <ResumeDownload />
-                  </div>
-                </button>
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_TOUHIDCODES_RESUME_LINK}`}
+                  target="_blank"
+                >
+                  <button className="btn btn-ghost font-regular">
+                    <p className=" badge text-white bg-opacity-10 rounded-md p-5 text-lg chillax font-extralight">
+                      RESUME
+                    </p>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
