@@ -33,7 +33,7 @@ const Header = () => {
   };
 
   return (
-    <div className=" bg-[#1d1e1f]">
+    <div className=" bg-[#1d1e1f] z-50 fixed md:top-0 md:left-0 w-full ">
       <div className="navbar  text-white mx-auto max-w-screen-xl">
         <div className="navbar-start">
           {/* TODO: Name should be regular font */}

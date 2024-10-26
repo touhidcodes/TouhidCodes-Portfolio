@@ -5,11 +5,11 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="bg-[#1d1e1f]">
-      <div className="mx-auto max-w-screen-xl min-h-screen text-white py-5 lg:py-10">
+    <div className="bg-[#1d1e1f] md:h-screen pt-20">
+      <div className="mx-auto max-w-screen-xl md:min-h-screen text-white ">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-5  px-5 lg:px-10 py-5 items-center lg:ml-10">
           <div className="col-span-3">
-            <h1 className=" text-2xl lg:text-5xl text-center lg:text-start mb-5">
+            <h1 className=" text-xl lg:text-5xl text-center lg:text-start mb-5">
               Hi, I am{" "}
               <span className="gradient-text font-semibold">
                 Touhidur Zaman
@@ -19,11 +19,11 @@ const Hero = () => {
               Full Stack <br />
               <span className="text-5xl lg:text-7xl">Web Developer</span>
             </h1>
-            <p className="text-2xl text-zinc-400 lg:pr-40 mt-5 text-center lg:text-start">
+            <p className="text-xl text-zinc-400 lg:pr-40 mt-5 text-center lg:text-start">
               Full Stack Web Development & Web Design, <br /> Both front-end &
               back-end services to build your imagination.
             </p>
-            <div className="flex items-center mt-10 text-xl">
+            <div className="flex items-center mt-7 text-xl">
               <div className="hidden lg:block">
                 <Link href="#projects">
                   <button className="btn btn-ghost font-regular">
@@ -52,7 +52,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="mx-auto col-span-2">
+          <div className="mx-auto col-span-2 z-0">
             <div className="box w-full">
               <div className="content">
                 <Image

@@ -1,4 +1,3 @@
-import { Icon } from "@iconify/react";
 import Image from "next/image";
 import ResumeDownload from "../../ResumeDownload/ResumeDownload";
 import Link from "next/link";
@@ -9,11 +8,11 @@ const AboutMe = () => {
       <div className="flex flex-col items-center">
         <h1 className="text-5xl font-bold">About Me</h1>
         <Image
-          src={"/assets/me/touhid-2.jpg"}
+          src={"/assets/me/professional.png"}
           width={200}
           height={200}
           alt="my image"
-          className="rounded-full border-4 border-gray-700 mt-14"
+          className="rounded mt-14"
         />
         <h1 className="text-center text-5xl chillax mt-10 mb-3">
           Hello I&apos;m Touhidur Zaman
