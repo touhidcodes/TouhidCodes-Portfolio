@@ -5,6 +5,7 @@ import EducationAndExperience from "../EducationAndExperience/EducationAndExperi
 import Footer from "../Footers/Footer";
 import Hero from "../Hero/Hero";
 import Projects from "../Projects/projects";
+import MyServices from "../Service/Service";
 import Skills from "../Skills/Skills";
 
 const Homepage = () => {
@@ -14,6 +15,7 @@ const Homepage = () => {
       <AboutMe />
       <Projects />
       <Skills />
+      <MyServices />
       <EducationAndExperience />
       <Blogs />
       <ContactMe />
